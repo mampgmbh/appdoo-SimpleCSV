@@ -41,8 +41,8 @@
     {
       "$id" : "Screen1",
       "positionOnOverview" : {
-        "top" : 112,
-        "left" : -236
+        "top" : 101,
+        "left" : -251
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
       "v_separateStatusBar" : false,
@@ -128,10 +128,14 @@
                 "isExpandedInEditorOutline" : true,
                 "scrollLeft" : 0,
                 "$id" : "TableViewCellContentViewea7937e409694735bc5642d5203e2e6c",
-                "isPrototype" : true,
-                "position" : {
-                  "top" : 50
+                "dataset" : {
+                  "Olympiad" : "XXXI",
+                  "Year" : "2016",
+                  "Host city" : "Rio",
+                  "Athletes" : "11238",
+                  "Nations" : "207"
                 },
+                "isPrototype" : true,
                 "frame" : {
                   "origin" : {
                     "x" : 0,
@@ -143,8 +147,8 @@
                   }
                 },
                 "$domain" : "appdoo.iOS",
-                "style" : {
-                  "backgroundColor" : "rgba(255,255,255,0)"
+                "position" : {
+                  "top" : 50
                 },
                 "subviews" : [
                   {
@@ -201,54 +205,10 @@
                       "height" : 55
                     },
                     "fontSize" : 17,
-                    "autoresizingMask" : 42,
+                    "autoresizingMask" : 43,
                     "fontFamily" : "System",
                     "autoFitWidth" : false,
                     "text" : "Rio",
-                    "numberOfLines" : 1
-                  },
-                  {
-                    "layoutMode" : "singleLine",
-                    "position" : {
-                      "top" : 0,
-                      "left" : 15
-                    },
-                    "fontName" : "_DEFAULT_BOLD_",
-                    "$type" : "UILabel",
-                    "frame" : {
-                      "origin" : {
-                        "x" : 15,
-                        "y" : 0
-                      },
-                      "size" : {
-                        "width" : 55,
-                        "height" : 55
-                      }
-                    },
-                    "hidden" : false,
-                    "$id" : "UILabel55cd408f13ca4ad49338361b509a5fff",
-                    "bindings" : [
-                      {
-                        "destination" : "CSVDataSource6d8a353b8edc4b538c98f15dda63622e",
-                        "destinationKeyPath" : "Olympiad",
-                        "sourceKeyPath" : "text",
-                        "enumerableItemAccess" : true
-                      }
-                    ],
-                    "$domain" : "appdoo.iOS",
-                    "heightIsEditable" : true,
-                    "userInteractionEnabled" : true,
-                    "textAlignment" : "",
-                    "name" : "Olympiad",
-                    "size" : {
-                      "width" : 55,
-                      "height" : 55
-                    },
-                    "fontSize" : 17,
-                    "autoresizingMask" : 44,
-                    "fontFamily" : "System",
-                    "autoFitWidth" : false,
-                    "text" : "XXXI",
                     "numberOfLines" : 1
                   },
                   {
@@ -311,8 +271,55 @@
                     "autoFitWidth" : false,
                     "text" : "2016",
                     "numberOfLines" : 1
+                  },
+                  {
+                    "layoutMode" : "singleLine",
+                    "position" : {
+                      "top" : 0,
+                      "left" : 15
+                    },
+                    "fontName" : "_DEFAULT_BOLD_",
+                    "$type" : "UILabel",
+                    "frame" : {
+                      "origin" : {
+                        "x" : 15,
+                        "y" : 0
+                      },
+                      "size" : {
+                        "width" : 55,
+                        "height" : 55
+                      }
+                    },
+                    "hidden" : false,
+                    "$id" : "UILabel55cd408f13ca4ad49338361b509a5fff",
+                    "bindings" : [
+                      {
+                        "destination" : "CSVDataSource6d8a353b8edc4b538c98f15dda63622e",
+                        "destinationKeyPath" : "Olympiad",
+                        "sourceKeyPath" : "text",
+                        "enumerableItemAccess" : true
+                      }
+                    ],
+                    "$domain" : "appdoo.iOS",
+                    "heightIsEditable" : true,
+                    "userInteractionEnabled" : true,
+                    "textAlignment" : "",
+                    "name" : "Olympiad",
+                    "size" : {
+                      "width" : 55,
+                      "height" : 55
+                    },
+                    "fontSize" : 17,
+                    "autoresizingMask" : 44,
+                    "fontFamily" : "System",
+                    "autoFitWidth" : false,
+                    "text" : "XXXI",
+                    "numberOfLines" : 1
                   }
                 ],
+                "style" : {
+                  "backgroundColor" : "rgba(255,255,255,0)"
+                },
                 "indexPath" : {
                   "section" : 0,
                   "item" : 0
@@ -579,8 +586,8 @@
     {
       "$id" : "Screen2",
       "positionOnOverview" : {
-        "top" : 113,
-        "left" : 180
+        "top" : 84,
+        "left" : 140
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
       "v_separateStatusBar" : false,
@@ -712,14 +719,14 @@
                     "layoutRelations" : [
                       {
                         "identify" : null,
-                        "destination" : "UILabel0b4348940aa44b77a71028fba929a4f9",
+                        "destination" : "UILabelf7af2e1574884944ab5935ec1e493da8",
                         "offset" : 10,
                         "type" : "right",
                         "$id" : "Object76e92cd7e4cc45d691a023496b7c1dfb"
                       },
                       {
                         "identify" : null,
-                        "destination" : "UILabel55cd408f13ca4ad49338361b509a5fff",
+                        "destination" : "UILabela54f0dc215e44794818bccdef77a8ea8",
                         "offset" : 0,
                         "type" : "y",
                         "$id" : "Object77e379fc79a14636bc23e4f7835d7793"
@@ -730,10 +737,71 @@
                       "height" : 55
                     },
                     "fontSize" : 17,
-                    "autoresizingMask" : 42,
+                    "autoresizingMask" : 43,
                     "fontFamily" : "System",
                     "autoFitWidth" : false,
                     "text" : "Rio",
+                    "numberOfLines" : 1
+                  },
+                  {
+                    "layoutMode" : "singleLine",
+                    "position" : {
+                      "top" : 0,
+                      "left" : 78
+                    },
+                    "fontName" : "_DEFAULT_",
+                    "$type" : "UILabel",
+                    "frame" : {
+                      "origin" : {
+                        "x" : 78,
+                        "y" : 0
+                      },
+                      "size" : {
+                        "width" : 50,
+                        "height" : 55
+                      }
+                    },
+                    "hidden" : false,
+                    "$id" : "UILabelf7af2e1574884944ab5935ec1e493da8",
+                    "textColor" : "rgba(0,0,0,0.50)",
+                    "$domain" : "appdoo.iOS",
+                    "bindings" : [
+                      {
+                        "destination" : "CSVDataSource6d8a353b8edc4b538c98f15dda63622e",
+                        "destinationKeyPath" : "Year",
+                        "sourceKeyPath" : "text",
+                        "enumerableItemAccess" : true
+                      }
+                    ],
+                    "heightIsEditable" : true,
+                    "userInteractionEnabled" : true,
+                    "textAlignment" : "",
+                    "name" : "Year",
+                    "layoutRelations" : [
+                      {
+                        "identify" : null,
+                        "destination" : "UILabela54f0dc215e44794818bccdef77a8ea8",
+                        "offset" : 8,
+                        "type" : "right",
+                        "$id" : "Objectdcdb85ccacab439f9ba451e265a39321"
+                      },
+                      {
+                        "identify" : null,
+                        "destination" : "UILabela54f0dc215e44794818bccdef77a8ea8",
+                        "offset" : 0,
+                        "type" : "y",
+                        "$id" : "Object946db6af7f02470f9253147a998ceadc"
+                      }
+                    ],
+                    "size" : {
+                      "width" : 50,
+                      "height" : 55
+                    },
+                    "fontSize" : 17,
+                    "autoresizingMask" : 45,
+                    "fontFamily" : "System",
+                    "autoFitWidth" : false,
+                    "text" : "2016",
                     "numberOfLines" : 1
                   },
                   {
@@ -778,67 +846,6 @@
                     "fontFamily" : "System",
                     "autoFitWidth" : false,
                     "text" : "XXXI",
-                    "numberOfLines" : 1
-                  },
-                  {
-                    "layoutMode" : "singleLine",
-                    "position" : {
-                      "top" : 0,
-                      "left" : 78
-                    },
-                    "fontName" : "_DEFAULT_",
-                    "$type" : "UILabel",
-                    "frame" : {
-                      "origin" : {
-                        "x" : 78,
-                        "y" : 0
-                      },
-                      "size" : {
-                        "width" : 50,
-                        "height" : 55
-                      }
-                    },
-                    "hidden" : false,
-                    "$id" : "UILabelf7af2e1574884944ab5935ec1e493da8",
-                    "textColor" : "rgba(0,0,0,0.50)",
-                    "$domain" : "appdoo.iOS",
-                    "bindings" : [
-                      {
-                        "destination" : "CSVDataSource6d8a353b8edc4b538c98f15dda63622e",
-                        "destinationKeyPath" : "Year",
-                        "sourceKeyPath" : "text",
-                        "enumerableItemAccess" : true
-                      }
-                    ],
-                    "heightIsEditable" : true,
-                    "userInteractionEnabled" : true,
-                    "textAlignment" : "",
-                    "name" : "Year",
-                    "layoutRelations" : [
-                      {
-                        "identify" : null,
-                        "destination" : "UILabel55cd408f13ca4ad49338361b509a5fff",
-                        "offset" : 8,
-                        "type" : "right",
-                        "$id" : "Objectdcdb85ccacab439f9ba451e265a39321"
-                      },
-                      {
-                        "identify" : null,
-                        "destination" : "UILabel55cd408f13ca4ad49338361b509a5fff",
-                        "offset" : 0,
-                        "type" : "y",
-                        "$id" : "Object946db6af7f02470f9253147a998ceadc"
-                      }
-                    ],
-                    "size" : {
-                      "width" : 50,
-                      "height" : 55
-                    },
-                    "fontSize" : 17,
-                    "autoresizingMask" : 45,
-                    "fontFamily" : "System",
-                    "autoFitWidth" : false,
-                    "text" : "2016",
                     "numberOfLines" : 1
                   }
                 ],
@@ -1661,7 +1668,7 @@
     },
     "editorAppearance" : {
       "fileReferencesNodeIsExpandedInEditorOutline" : true,
-      "inspectorCurrentSegment" : 0,
+      "inspectorCurrentSegment" : 1,
       "collapsedNewItemSections" : [
 
       ],
@@ -1716,6 +1723,12 @@
         "Scenec2343d27d73144afa651c2749bc3e1b4",
         "Screen2",
         "Screen1",
+        "Screen2",
+        "Screen1",
+        "Screen2",
+        "Screen1",
+        "Screen2",
+        "Screen1",
         "Screen2"
       ],
       "inspectorCollapsedGroups" : [
@@ -1733,7 +1746,7 @@
       "inspectorIsVisible" : true,
       "elementListIsVisible" : true,
       "globalObjectsNodeIsExpandedInEditorOutline" : true,
-      "historyStackPosition" : 49
+      "historyStackPosition" : 55
     },
     "hidesStatusBarOnLaunch" : 0,
     "editorVersion" : 363,
