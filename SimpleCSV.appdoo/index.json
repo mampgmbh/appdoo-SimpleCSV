@@ -41,7 +41,7 @@
     {
       "$id" : "Screen1",
       "positionOnOverview" : {
-        "top" : 118,
+        "top" : 112,
         "left" : -236
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
@@ -128,14 +128,10 @@
                 "isExpandedInEditorOutline" : true,
                 "scrollLeft" : 0,
                 "$id" : "TableViewCellContentViewea7937e409694735bc5642d5203e2e6c",
-                "dataset" : {
-                  "Olympiad" : "XXXI",
-                  "Year" : "2016",
-                  "Host city" : "Rio",
-                  "Athletes" : "11238",
-                  "Nations" : "207"
-                },
                 "isPrototype" : true,
+                "position" : {
+                  "top" : 50
+                },
                 "frame" : {
                   "origin" : {
                     "x" : 0,
@@ -147,8 +143,8 @@
                   }
                 },
                 "$domain" : "appdoo.iOS",
-                "position" : {
-                  "top" : 50
+                "style" : {
+                  "backgroundColor" : "rgba(255,255,255,0)"
                 },
                 "subviews" : [
                   {
@@ -317,9 +313,6 @@
                     "numberOfLines" : 1
                   }
                 ],
-                "style" : {
-                  "backgroundColor" : "rgba(255,255,255,0)"
-                },
                 "indexPath" : {
                   "section" : 0,
                   "item" : 0
@@ -586,8 +579,8 @@
     {
       "$id" : "Screen2",
       "positionOnOverview" : {
-        "top" : 118,
-        "left" : 187
+        "top" : 113,
+        "left" : 180
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
       "v_separateStatusBar" : false,
@@ -598,11 +591,25 @@
         "width" : 320,
         "height" : 568
       },
+      "segues" : [
+        {
+          "destinationSceneID" : "Scenec2343d27d73144afa651c2749bc3e1b4",
+          "viewID" : "UITableView670153d459d44df6a225b695e369027e",
+          "$type" : "Segue",
+          "$domain" : "appdoo.iOS"
+        }
+      ],
       "hasCustomInterfaceOrientations" : false,
       "objects" : [
         {
-          "$id" : "CSVDataSource35f7c3aefa5c4a1a8dc753fd0c1408c9",
+          "$type" : "CSVDataSource",
           "location" : "remote",
+          "URLRequest" : {
+            "$type" : "URLRequest",
+            "$domain" : "Core",
+            "URL" : "https:\/\/raw.githubusercontent.com\/mampgmbh\/appdoo-SimpleCSV\/master\/List.txt"
+          },
+          "$id" : "CSVDataSource35f7c3aefa5c4a1a8dc753fd0c1408c9",
           "actionInfo" : {
             "type" : "objectAction",
             "modalTransitionStyle" : "-1",
@@ -611,12 +618,8 @@
             "$type" : "ActionInfo",
             "$domain" : "appdoo"
           },
-          "URLRequest" : {
-            "$type" : "URLRequest",
-            "$domain" : "Core"
-          },
-          "$type" : "CSVDataSource",
-          "$domain" : "info.appdoo-mac"
+          "$domain" : "info.appdoo-mac",
+          "lastCheckWasValid" : false
         }
       ],
       "viewController" : {
@@ -649,6 +652,402 @@
               "height" : 455
             }
           },
+          "subviews" : [
+            {
+              "cellPrototype" : {
+                "isExpandedInEditorOutline" : true,
+                "scrollLeft" : 0,
+                "$id" : "TableViewCellContentView3a9099b11ceb41b3a526b2519fc43dc6",
+                "isPrototype" : true,
+                "position" : {
+                  "top" : 50
+                },
+                "frame" : {
+                  "origin" : {
+                    "y" : 50
+                  },
+                  "size" : {
+                    "width" : 272,
+                    "height" : 55
+                  }
+                },
+                "$domain" : "appdoo.iOS",
+                "style" : {
+                  "backgroundColor" : "rgba(255,255,255,0)"
+                },
+                "subviews" : [
+                  {
+                    "layoutMode" : "singleLine",
+                    "position" : {
+                      "top" : 0,
+                      "left" : 138
+                    },
+                    "fontName" : "_DEFAULT_BOLD_",
+                    "$type" : "UILabel",
+                    "frame" : {
+                      "origin" : {
+                        "x" : 138,
+                        "y" : 0
+                      },
+                      "size" : {
+                        "width" : 110,
+                        "height" : 55
+                      }
+                    },
+                    "hidden" : false,
+                    "$id" : "UILabelc16d5e2796b64d44b94a239931736db9",
+                    "bindings" : [
+                      {
+                        "destination" : "CSVDataSource6d8a353b8edc4b538c98f15dda63622e",
+                        "destinationKeyPath" : "Host city",
+                        "sourceKeyPath" : "text",
+                        "enumerableItemAccess" : true
+                      }
+                    ],
+                    "$domain" : "appdoo.iOS",
+                    "heightIsEditable" : true,
+                    "userInteractionEnabled" : true,
+                    "textAlignment" : "",
+                    "name" : "Host city",
+                    "layoutRelations" : [
+                      {
+                        "identify" : null,
+                        "destination" : "UILabel0b4348940aa44b77a71028fba929a4f9",
+                        "offset" : 10,
+                        "type" : "right",
+                        "$id" : "Object76e92cd7e4cc45d691a023496b7c1dfb"
+                      },
+                      {
+                        "identify" : null,
+                        "destination" : "UILabel55cd408f13ca4ad49338361b509a5fff",
+                        "offset" : 0,
+                        "type" : "y",
+                        "$id" : "Object77e379fc79a14636bc23e4f7835d7793"
+                      }
+                    ],
+                    "size" : {
+                      "width" : 110,
+                      "height" : 55
+                    },
+                    "fontSize" : 17,
+                    "autoresizingMask" : 42,
+                    "fontFamily" : "System",
+                    "autoFitWidth" : false,
+                    "text" : "Rio",
+                    "numberOfLines" : 1
+                  },
+                  {
+                    "layoutMode" : "singleLine",
+                    "position" : {
+                      "top" : 0,
+                      "left" : 15
+                    },
+                    "fontName" : "_DEFAULT_BOLD_",
+                    "$type" : "UILabel",
+                    "frame" : {
+                      "origin" : {
+                        "x" : 15,
+                        "y" : 0
+                      },
+                      "size" : {
+                        "width" : 55,
+                        "height" : 55
+                      }
+                    },
+                    "hidden" : false,
+                    "$id" : "UILabela54f0dc215e44794818bccdef77a8ea8",
+                    "bindings" : [
+                      {
+                        "destination" : "CSVDataSource6d8a353b8edc4b538c98f15dda63622e",
+                        "destinationKeyPath" : "Olympiad",
+                        "sourceKeyPath" : "text",
+                        "enumerableItemAccess" : true
+                      }
+                    ],
+                    "$domain" : "appdoo.iOS",
+                    "heightIsEditable" : true,
+                    "userInteractionEnabled" : true,
+                    "textAlignment" : "",
+                    "name" : "Olympiad",
+                    "size" : {
+                      "width" : 55,
+                      "height" : 55
+                    },
+                    "fontSize" : 17,
+                    "autoresizingMask" : 44,
+                    "fontFamily" : "System",
+                    "autoFitWidth" : false,
+                    "text" : "XXXI",
+                    "numberOfLines" : 1
+                  },
+                  {
+                    "layoutMode" : "singleLine",
+                    "position" : {
+                      "top" : 0,
+                      "left" : 78
+                    },
+                    "fontName" : "_DEFAULT_",
+                    "$type" : "UILabel",
+                    "frame" : {
+                      "origin" : {
+                        "x" : 78,
+                        "y" : 0
+                      },
+                      "size" : {
+                        "width" : 50,
+                        "height" : 55
+                      }
+                    },
+                    "hidden" : false,
+                    "$id" : "UILabelf7af2e1574884944ab5935ec1e493da8",
+                    "textColor" : "rgba(0,0,0,0.50)",
+                    "$domain" : "appdoo.iOS",
+                    "bindings" : [
+                      {
+                        "destination" : "CSVDataSource6d8a353b8edc4b538c98f15dda63622e",
+                        "destinationKeyPath" : "Year",
+                        "sourceKeyPath" : "text",
+                        "enumerableItemAccess" : true
+                      }
+                    ],
+                    "heightIsEditable" : true,
+                    "userInteractionEnabled" : true,
+                    "textAlignment" : "",
+                    "name" : "Year",
+                    "layoutRelations" : [
+                      {
+                        "identify" : null,
+                        "destination" : "UILabel55cd408f13ca4ad49338361b509a5fff",
+                        "offset" : 8,
+                        "type" : "right",
+                        "$id" : "Objectdcdb85ccacab439f9ba451e265a39321"
+                      },
+                      {
+                        "identify" : null,
+                        "destination" : "UILabel55cd408f13ca4ad49338361b509a5fff",
+                        "offset" : 0,
+                        "type" : "y",
+                        "$id" : "Object946db6af7f02470f9253147a998ceadc"
+                      }
+                    ],
+                    "size" : {
+                      "width" : 50,
+                      "height" : 55
+                    },
+                    "fontSize" : 17,
+                    "autoresizingMask" : 45,
+                    "fontFamily" : "System",
+                    "autoFitWidth" : false,
+                    "text" : "2016",
+                    "numberOfLines" : 1
+                  }
+                ],
+                "indexPath" : {
+                  "section" : 0,
+                  "item" : 0
+                },
+                "size" : {
+                  "width" : 272,
+                  "height" : 55
+                },
+                "heightIsEditable" : true,
+                "scrollTop" : 0,
+                "hidden" : false,
+                "modalTransitionStyle" : "-1",
+                "userInteractionEnabled" : true,
+                "$type" : "TableViewCellContentView"
+              },
+              "detailSceneID" : "Scenec2343d27d73144afa651c2749bc3e1b4",
+              "position" : {
+                "top" : 0,
+                "left" : 0
+              },
+              "$type" : "UITableView",
+              "insetTop" : 0,
+              "rowHeight" : 55,
+              "pullToRefresh" : true,
+              "separatorInsetLeft" : 15,
+              "$domain" : "appdoo.iOS",
+              "backgroundColor" : "rgb(255,255,255)",
+              "$id" : "UITableView670153d459d44df6a225b695e369027e",
+              "hidden" : false,
+              "allowsSelection" : true,
+              "transform" : "",
+              "isPreparing" : true,
+              "scrollTop" : 0,
+              "selectable" : false,
+              "isExpandedInEditorOutline" : true,
+              "numberOfStaticSections" : 1,
+              "size" : {
+                "width" : 320,
+                "height" : 455
+              },
+              "alpha" : 1,
+              "insetBottom" : 0,
+              "autoresizingMask" : 18,
+              "usesDefaultSeparatorInsets" : true,
+              "usesDataSource" : true,
+              "listHeaderView" : {
+                "isExpandedInEditorOutline" : true,
+                "scrollLeft" : 0,
+                "$id" : "TableViewHeaderView5bbb24da294c4ee6925c5d1747fb0e64",
+                "position" : {
+                  "top" : 0
+                },
+                "backgroundColor" : "rgba(119,118,119,0.50)",
+                "$domain" : "appdoo.iOS",
+                "frame" : {
+                  "origin" : {
+                    "y" : 0
+                  },
+                  "size" : {
+                    "width" : 320,
+                    "height" : 50
+                  }
+                },
+                "subviews" : [
+                  {
+                    "layoutMode" : "singleLine",
+                    "position" : {
+                      "top" : 0,
+                      "left" : 15
+                    },
+                    "fontName" : "_DEFAULT_BOLD_",
+                    "$type" : "UILabel",
+                    "frame" : {
+                      "origin" : {
+                        "x" : 15,
+                        "y" : 0
+                      },
+                      "size" : {
+                        "width" : 290,
+                        "height" : 50
+                      }
+                    },
+                    "hidden" : false,
+                    "$id" : "UILabelebbf4f1c14f54199bc56ae918033b926",
+                    "textColor" : "rgba(255,255,255,1.00)",
+                    "$domain" : "appdoo.iOS",
+                    "heightIsEditable" : true,
+                    "transform" : "",
+                    "textAlignment" : "left",
+                    "userInteractionEnabled" : true,
+                    "name" : "Headline",
+                    "size" : {
+                      "width" : 290,
+                      "height" : 50
+                    },
+                    "alpha" : 0.5,
+                    "fontSize" : 18,
+                    "autoresizingMask" : 42,
+                    "fontFamily" : "System",
+                    "autoFitWidth" : false,
+                    "text" : "List of Olympic Games (Summer)",
+                    "numberOfLines" : 1
+                  }
+                ],
+                "transform" : "",
+                "cellType" : "Header",
+                "heightIsEditable" : true,
+                "scrollTop" : 0,
+                "size" : {
+                  "width" : 320,
+                  "height" : 50
+                },
+                "alpha" : 1,
+                "hidden" : false,
+                "userInteractionEnabled" : true,
+                "$type" : "TableViewHeaderView"
+              },
+              "totalHeight" : 455,
+              "modalTransitionStyle" : "-1",
+              "dataSourceId" : "CSVDataSource35f7c3aefa5c4a1a8dc753fd0c1408c9",
+              "scrollLeft" : 0,
+              "staticSections" : [
+                {
+                  "$id" : "UITableViewSection417e8fe3240f4c79a0133cff0e6f0c1d",
+                  "staticCells" : [
+                    {
+                      "isExpandedInEditorOutline" : true,
+                      "scrollLeft" : 0,
+                      "$id" : "TableViewCellContentView5a15367d18204d2db341a9d6c315275e",
+                      "position" : {
+                        "top" : 0,
+                        "left" : 0
+                      },
+                      "frame" : {
+                        "origin" : {
+                          "x" : 0,
+                          "y" : 0
+                        },
+                        "size" : {
+                          "width" : 320,
+                          "height" : 44
+                        }
+                      },
+                      "$domain" : "appdoo.iOS",
+                      "autoresizingMask" : 2,
+                      "subviews" : [
+                        {
+                          "layoutMode" : "multiLine",
+                          "position" : {
+                            "top" : 11,
+                            "left" : 15
+                          },
+                          "fontName" : "_DEFAULT_BOLD_",
+                          "$type" : "UILabel",
+                          "frame" : {
+                            "origin" : {
+                              "x" : 15,
+                              "y" : 11
+                            },
+                            "size" : {
+                              "width" : 290,
+                              "height" : 22
+                            }
+                          },
+                          "hidden" : false,
+                          "$id" : "UILabel7d2ef7ece99e4593848999ad29cfdc9b",
+                          "$domain" : "appdoo.iOS",
+                          "heightIsEditable" : true,
+                          "transform" : "",
+                          "textAlignment" : "",
+                          "userInteractionEnabled" : true,
+                          "size" : {
+                            "width" : 290,
+                            "height" : 22
+                          },
+                          "alpha" : 1,
+                          "fontSize" : 17,
+                          "autoresizingMask" : 36,
+                          "fontFamily" : "System",
+                          "autoFitWidth" : false,
+                          "text" : "Row",
+                          "numberOfLines" : 0
+                        }
+                      ],
+                      "transform" : "",
+                      "size" : {
+                        "width" : 320,
+                        "height" : 44
+                      },
+                      "heightIsEditable" : true,
+                      "scrollTop" : 0,
+                      "alpha" : 1,
+                      "hidden" : false,
+                      "modalTransitionStyle" : "-1",
+                      "userInteractionEnabled" : true,
+                      "$type" : "TableViewCellContentView"
+                    }
+                  ],
+                  "numberOfStaticCells" : 1,
+                  "isExpandedInEditorOutline" : true,
+                  "$type" : "UITableViewSection",
+                  "$domain" : "appdoo.iOS"
+                }
+              ]
+            }
+          ],
           "transform" : "",
           "size" : {
             "width" : 320,
@@ -1315,6 +1714,8 @@
         "Scenec2343d27d73144afa651c2749bc3e1b4",
         "Screen1",
         "Scenec2343d27d73144afa651c2749bc3e1b4",
+        "Screen2",
+        "Screen1",
         "Screen2"
       ],
       "inspectorCollapsedGroups" : [
@@ -1332,7 +1733,7 @@
       "inspectorIsVisible" : true,
       "elementListIsVisible" : true,
       "globalObjectsNodeIsExpandedInEditorOutline" : true,
-      "historyStackPosition" : 47
+      "historyStackPosition" : 49
     },
     "hidesStatusBarOnLaunch" : 0,
     "editorVersion" : 363,
