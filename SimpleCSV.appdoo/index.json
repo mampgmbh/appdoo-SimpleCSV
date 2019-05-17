@@ -41,8 +41,8 @@
     {
       "$id" : "Screen1",
       "positionOnOverview" : {
-        "top" : 101,
-        "left" : -251
+        "top" : 81,
+        "left" : -252
       },
       "sceneObjectsNodeIsExpandedInEditorOutline" : true,
       "v_separateStatusBar" : false,
@@ -128,14 +128,10 @@
                 "isExpandedInEditorOutline" : true,
                 "scrollLeft" : 0,
                 "$id" : "TableViewCellContentViewea7937e409694735bc5642d5203e2e6c",
-                "dataset" : {
-                  "Olympiad" : "XXXI",
-                  "Year" : "2016",
-                  "Host city" : "Rio",
-                  "Athletes" : "11238",
-                  "Nations" : "207"
-                },
                 "isPrototype" : true,
+                "position" : {
+                  "top" : 50
+                },
                 "frame" : {
                   "origin" : {
                     "x" : 0,
@@ -147,8 +143,8 @@
                   }
                 },
                 "$domain" : "appdoo.iOS",
-                "position" : {
-                  "top" : 50
+                "style" : {
+                  "backgroundColor" : "rgba(255,255,255,0)"
                 },
                 "subviews" : [
                   {
@@ -317,9 +313,6 @@
                     "numberOfLines" : 1
                   }
                 ],
-                "style" : {
-                  "backgroundColor" : "rgba(255,255,255,0)"
-                },
                 "indexPath" : {
                   "section" : 0,
                   "item" : 0
@@ -617,6 +610,13 @@
             "URL" : "https:\/\/raw.githubusercontent.com\/mampgmbh\/appdoo-SimpleCSV\/master\/List.txt"
           },
           "$id" : "CSVDataSource35f7c3aefa5c4a1a8dc753fd0c1408c9",
+          "columnNames" : [
+            "Olympiad",
+            "Year",
+            "Host city",
+            "Nations",
+            "Athletes"
+          ],
           "actionInfo" : {
             "type" : "objectAction",
             "modalTransitionStyle" : "-1",
@@ -626,7 +626,7 @@
             "$domain" : "appdoo"
           },
           "$domain" : "info.appdoo-mac",
-          "lastCheckWasValid" : false
+          "lastCheckWasValid" : 31
         }
       ],
       "viewController" : {
@@ -640,8 +640,8 @@
         "title" : "Simple CSV (remote)",
         "viewData" : {
           "isExpandedInEditorOutline" : true,
-          "scrollLeft" : 0,
           "$id" : "UIView6570",
+          "$type" : "SceneRootView",
           "position" : {
             "top" : 0,
             "left" : 0
@@ -663,8 +663,10 @@
             {
               "cellPrototype" : {
                 "isExpandedInEditorOutline" : true,
-                "scrollLeft" : 0,
                 "$id" : "TableViewCellContentView3a9099b11ceb41b3a526b2519fc43dc6",
+                "style" : {
+                  "backgroundColor" : "rgba(255,255,255,0)"
+                },
                 "isPrototype" : true,
                 "position" : {
                   "top" : 50
@@ -679,9 +681,7 @@
                   }
                 },
                 "$domain" : "appdoo.iOS",
-                "style" : {
-                  "backgroundColor" : "rgba(255,255,255,0)"
-                },
+                "$type" : "TableViewCellContentView",
                 "subviews" : [
                   {
                     "layoutMode" : "singleLine",
@@ -862,7 +862,7 @@
                 "hidden" : false,
                 "modalTransitionStyle" : "-1",
                 "userInteractionEnabled" : true,
-                "$type" : "TableViewCellContentView"
+                "scrollLeft" : 0
               },
               "detailSceneID" : "Scenec2343d27d73144afa651c2749bc3e1b4",
               "position" : {
@@ -896,8 +896,8 @@
               "usesDataSource" : true,
               "listHeaderView" : {
                 "isExpandedInEditorOutline" : true,
-                "scrollLeft" : 0,
                 "$id" : "TableViewHeaderView5bbb24da294c4ee6925c5d1747fb0e64",
+                "$type" : "TableViewHeaderView",
                 "position" : {
                   "top" : 0
                 },
@@ -964,7 +964,7 @@
                 "alpha" : 1,
                 "hidden" : false,
                 "userInteractionEnabled" : true,
-                "$type" : "TableViewHeaderView"
+                "scrollLeft" : 0
               },
               "totalHeight" : 455,
               "modalTransitionStyle" : "-1",
@@ -972,12 +972,12 @@
               "scrollLeft" : 0,
               "staticSections" : [
                 {
-                  "$id" : "UITableViewSection417e8fe3240f4c79a0133cff0e6f0c1d",
+                  "$domain" : "appdoo.iOS",
                   "staticCells" : [
                     {
                       "isExpandedInEditorOutline" : true,
-                      "scrollLeft" : 0,
                       "$id" : "TableViewCellContentView5a15367d18204d2db341a9d6c315275e",
+                      "$type" : "TableViewCellContentView",
                       "position" : {
                         "top" : 0,
                         "left" : 0
@@ -1044,13 +1044,13 @@
                       "hidden" : false,
                       "modalTransitionStyle" : "-1",
                       "userInteractionEnabled" : true,
-                      "$type" : "TableViewCellContentView"
+                      "scrollLeft" : 0
                     }
                   ],
                   "numberOfStaticCells" : 1,
                   "isExpandedInEditorOutline" : true,
                   "$type" : "UITableViewSection",
-                  "$domain" : "appdoo.iOS"
+                  "$id" : "UITableViewSection417e8fe3240f4c79a0133cff0e6f0c1d"
                 }
               ]
             }
@@ -1066,7 +1066,7 @@
           "hidden" : false,
           "userInteractionEnabled" : true,
           "name" : "Ansicht",
-          "$type" : "SceneRootView"
+          "scrollLeft" : 0
         },
         "$type" : "UIViewController",
         "$domain" : "appdoo.iOS"
@@ -1091,9 +1091,8 @@
         },
         "$domain" : "appdoo.iOS",
         "autoresizingMask" : 2,
-        "dropsShadow" : true,
-        "title" : "Simple CSV (remote)",
         "translucent" : false,
+        "title" : "Simple CSV (remote)",
         "heightIsEditable" : false,
         "size" : {
           "width" : 320,
@@ -1153,8 +1152,8 @@
         "$type" : "UINavigationBar"
       },
       "positionOnOverview" : {
-        "top" : 839,
-        "left" : -225
+        "top" : 900,
+        "left" : -52
       },
       "viewController" : {
         "$id" : "UIViewControllerb78bc1d1d549455aaecf70c87b6e1750",
@@ -1167,8 +1166,8 @@
         "title" : "Detail",
         "viewData" : {
           "isExpandedInEditorOutline" : true,
-          "scrollLeft" : 0,
           "$id" : "SceneRootViewefbf2f3c349a434486ca1a72446d7a21",
+          "$type" : "SceneRootView",
           "position" : {
             "top" : 0,
             "left" : 0
@@ -1242,8 +1241,8 @@
               "bindings" : [
                 {
                   "destination" : "Scenec2343d27d73144afa651c2749bc3e1b4InputData",
-                  "destinationKeyPath" : "contents.Athletes",
-                  "sourceKeyPath" : "text"
+                  "sourceKeyPath" : "text",
+                  "destinationKeyPath" : "contents.Athletes"
                 }
               ],
               "$domain" : "appdoo.iOS",
@@ -1343,8 +1342,8 @@
               "bindings" : [
                 {
                   "destination" : "Scenec2343d27d73144afa651c2749bc3e1b4InputData",
-                  "destinationKeyPath" : "contents.Nations",
-                  "sourceKeyPath" : "text"
+                  "sourceKeyPath" : "text",
+                  "destinationKeyPath" : "contents.Nations"
                 }
               ],
               "$domain" : "appdoo.iOS",
@@ -1446,8 +1445,8 @@
               "bindings" : [
                 {
                   "destination" : "Scenec2343d27d73144afa651c2749bc3e1b4InputData",
-                  "destinationKeyPath" : "contents.Host city",
-                  "sourceKeyPath" : "text"
+                  "sourceKeyPath" : "text",
+                  "destinationKeyPath" : "contents.Host city"
                 }
               ],
               "heightIsEditable" : false,
@@ -1501,8 +1500,8 @@
               "bindings" : [
                 {
                   "destination" : "Scenec2343d27d73144afa651c2749bc3e1b4InputData",
-                  "destinationKeyPath" : "contents.Year",
-                  "sourceKeyPath" : "text"
+                  "sourceKeyPath" : "text",
+                  "destinationKeyPath" : "contents.Year"
                 }
               ],
               "heightIsEditable" : false,
@@ -1554,8 +1553,8 @@
               "bindings" : [
                 {
                   "destination" : "Scenec2343d27d73144afa651c2749bc3e1b4InputData",
-                  "destinationKeyPath" : "contents.Olympiad",
-                  "sourceKeyPath" : "text"
+                  "sourceKeyPath" : "text",
+                  "destinationKeyPath" : "contents.Olympiad"
                 }
               ],
               "heightIsEditable" : false,
@@ -1586,7 +1585,7 @@
           "alpha" : 1,
           "hidden" : false,
           "userInteractionEnabled" : true,
-          "$type" : "SceneRootView"
+          "scrollLeft" : 0
         },
         "$type" : "UIViewController",
         "$domain" : "appdoo.iOS"
@@ -1729,7 +1728,8 @@
         "Screen1",
         "Screen2",
         "Screen1",
-        "Screen2"
+        "Screen2",
+        "Screen1"
       ],
       "inspectorCollapsedGroups" : [
         "UIScrollViewInsets",
@@ -1746,7 +1746,7 @@
       "inspectorIsVisible" : true,
       "elementListIsVisible" : true,
       "globalObjectsNodeIsExpandedInEditorOutline" : true,
-      "historyStackPosition" : 55
+      "historyStackPosition" : 56
     },
     "hidesStatusBarOnLaunch" : 0,
     "editorVersion" : 363,
@@ -1755,21 +1755,21 @@
     "lastObjectID" : 10041,
     "simulatedSystemVersion" : 7,
     "supportedInterfaceOrientations" : 6,
-    "description" : "Tabbed App (iPhone)",
+    "overviewAppearance" : {
+      "contentScale" : 0.33000000000000002
+    },
     "deviceProfile" : "iPhone-Widescreen",
     "appleAppBundlePrefix" : "",
     "version" : "1.0",
     "defaultLanguage" : "en",
     "targetedDeviceFamily" : "iOS-Universal",
     "appleAppCategory" : "",
-    "editedObject" : "Screen2",
+    "editedObject" : "Screen1",
     "projectID" : "B9418B00-ED08-4189-8056-1207672F5684-7263-000008D8DD3D6D3E",
     "companyName" : "MAMP GmbH",
     "windowFrame" : "285 91 960 640 0 0 1440 878 ",
     "windowIsFullScreen" : false,
     "rootInstance" : "TabBarController",
-    "overviewAppearance" : {
-      "contentScale" : 0.33000000000000002
-    }
+    "description" : "Tabbed App (iPhone)"
   }
 }
